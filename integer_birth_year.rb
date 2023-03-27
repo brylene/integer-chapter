@@ -20,4 +20,11 @@
 # Then the output should be:
 # "Nice! You were born in approximately 2013."
 
-p "How old are you?"
+require 'date'
+
+ p "How old are you?"
+ age = gets.chomp.to_i
+current_year = Date.today.year
+birth_year = current_year - age
+
+p "Nice! You were born in approximately #{birth_year}."

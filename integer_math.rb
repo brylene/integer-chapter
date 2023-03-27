@@ -4,3 +4,8 @@
 # 
 # 4
 
+days = 365
+week = 7
+
+remainder = days % week
+p remainder
